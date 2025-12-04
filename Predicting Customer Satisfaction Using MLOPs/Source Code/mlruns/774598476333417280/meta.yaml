@@ -1,6 +1,0 @@
-artifact_location: file:///D:/sentiment/mlruns/774598476333417280
-creation_time: 1746358394522
-experiment_id: '774598476333417280'
-last_update_time: 1746358394522
-lifecycle_stage: active
-name: SentimentAnalysisPipeline
