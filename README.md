@@ -39,13 +39,9 @@ This project implements an **end-to-end Real-Time Sentiment Analyzer with MLOps*
 
 ## 🔑 Core Operations
 
-###1️⃣ Real-Time Sentiment Prediction
+### 1️⃣ Real-Time Sentiment Prediction
 - Uses **TF-IDF + Random Forest**
 - Returns **Sentiment + Confidence %**
-
-📌 **UI Preview**  
-![Prediction](assets/images/prediction.png)
-
 ---
 
 ### 2️⃣ Automated Reply Generation (Gemini AI)
@@ -61,7 +57,7 @@ This project implements an **end-to-end Real-Time Sentiment Analyzer with MLOps*
 ---
 
 ### 3️⃣ MongoDB Logging
-```json
+json
 { "email": "john@example.com", "review": "Good service", "sentiment": "positive", "confidence": "93%" }
 📌 MongoDB Storage
 
@@ -106,6 +102,9 @@ MLOps		MLflow, GitHub Actions
 Database	MongoDB
 Email		Google Gemini API + SMTP
 Deployment	Uvicorn Server
+
+---
+
 ⚙️ Installation & Setup
 1️⃣ Clone Repo
 git clone https://github.com/yourusername/sentiment-mlops.git
@@ -142,9 +141,3 @@ Feature	Purpose
 🧑‍🏫 Guided by: Mrs. S. Lalitha, M.Tech.
 
 ---
-
-### 🎉 Done!
-Now you can:
-
-📌 Copy + Save as `README.md`  
-📌 Upload to your GitHub Proje
