@@ -61,8 +61,6 @@ Traditional customer feedback analysis is slow and inefficient. This project int
 
 ### 📍 3) MongoDB Review Logging  
 All customer feedback with sentiment and confidence is stored in MongoDB:
-
-```json
 { 
   "email": "john@example.com", 
   "review": "Good service", 
@@ -76,11 +74,9 @@ Tracks metrics, artifacts, and model versions via MLflow
 
 Automates training and deployment using GitHub Actions
 
-📌 CI/CD Pipeline Output
+## 📌 CI/CD Pipeline Output
 
 🏗️ System Architecture
-java
-Copy code
 ┌─────────────┐     ┌──────────────┐     ┌──────────────┐
 │   Web UI    │ --> │   FastAPI    │ --> │ ML Model (RF)│
 └─────────────┘     └─────┬────────┘     └──────┬───────┘
@@ -89,9 +85,8 @@ Copy code
                       MongoDB DB          Gemini AI (Email)
                             ▲                    │
                             └───── CI/CD + MLflow┘
-📂 Folder Structure
-bash
-Copy code
+## 📂 Folder Structure
+
 📦 Sentiment-MLOPS
 ├── app.py                # FastAPI Backend
 ├── pipeline.py           # MLflow Training Pipeline
@@ -111,45 +106,35 @@ Copy code
 │   └── reviews.html
 └── static/
     └── image/            # Icons/Styling
-🛠️ Tech Stack
-Component	Technology
-Frontend	HTML, CSS, Bootstrap
-Backend	FastAPI
-ML Model	Scikit-Learn (Random Forest + TF-IDF)
-Database	MongoDB
-MLOps	MLflow, GitHub Actions
-Email	Google Gemini API + SMTP
-Deployment	Uvicorn Server
+## 🛠️ Tech Stack
+Component	    Technology
+Frontend	    HTML, CSS, Bootstrap
+Backend	      FastAPI
+ML Model	    Scikit-Learn (Random Forest + TF-IDF)
+Database	    MongoDB
+MLOps	        MLflow, GitHub Actions
+Email	        Google Gemini API + SMTP
+Deployment	  Uvicorn Server
 
-⚙️ Installation & Setup
+## ⚙️ Installation & Setup
 🔧 Step 1: Clone Repository
-bash
-Copy code
+
 git clone https://github.com/yourusername/sentiment-mlops.git
 cd sentiment-mlops
 📦 Step 2: Install Dependencies
-bash
-Copy code
+
 pip install -r requirements.txt
 🔐 Step 3: Create .env File
-ini
-Copy code
+
 MONGO_URI="your_mongodb_uri"
 SENDER_PASS="your_gmail_app_password"
 GEMINI_API_KEY="your_gemini_api_key"
 🚀 Step 4: Run the Application
-bash
-Copy code
+
 uvicorn app:app --reload
 🎛️ MLOps Pipeline Usage
 ▶️ Train & Track Model
-bash
-Copy code
-python pipeline.py
-📊 Launch MLflow Tracking UI
-bash
-Copy code
-mlflow ui
+
 🔮 Future Enhancements
 Feature	Description
 🌐 Multi-Language Support	Tamil, Hindi, etc.
@@ -161,3 +146,4 @@ Feature	Description
 👨‍💻 Contributors
 👨‍🎓 Final Year B.E. CSE Students — Arunai Engineering College
 🧑‍🏫 Project Guide: Mrs. S. Lalitha, M.Tech.
+
